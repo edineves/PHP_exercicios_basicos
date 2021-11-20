@@ -1,0 +1,108 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+  <head>  
+    <meta charset="UTF-8">
+    <title> cadastro </title>
+  </head>
+
+  <body bgcolor= "silver">
+    <h1>  Cadastro Básico de Clientes  </h1>
+
+    <form action ="gravarCliente.php" 
+          method="get">
+
+        Nome do cliente: 
+         <input  type="text"
+                 name="nomeCliente"                
+                 size="40"
+                 maxlength="40"
+                 placeholder="informe aqui o nome do cliente ">
+                 <br>
+
+         Nascimento:
+         <input  type="date" 
+                 name="nascimento" 
+                 >
+                <br>
+           
+         <fieldset>
+         <legend> Sexo: </legend>      
+         <input type="radio" name="sexo" value="M"checked > Masculino.
+         <input type="radio" name="sexo" value="F" > Feminino.
+         </fieldset>
+         <br>
+          
+         Estado Civil:
+         <select name="estadoCivil">
+           <option value=""> Escolha </option>  
+           <option value="Solteiro"> Solteiro </option> 
+           <option value="Casado"> Casado </option>
+           <option value="Separado"> Separado </option>
+           <option value="Divorciado"> Divorciado </option>
+           <option value="Viuvo"> Viuvo </option>        
+		     </select>
+         <br>
+
+        <h2> Dados para contato </h2>
+
+        e-mail:
+         <input type="text"
+                name= "email">
+                <br>
+         <input type="checkbox" 
+                name="email" 
+                maxlength="40"> 
+                Deseja receber e-mails.
+         <br>
+        Telefone:
+         <input type="number" name= "ddd1" size="3" maxlength="2"> 
+         <input type="tel" name="telefone1" size="9" maxlength="9">  
+
+         <select name="tipo1">
+          <option value=""> escolha </option>           
+          <option value="Residencial"> Residencial </option>
+          <option value="Celular"> Celular </option>
+          <option value="Recados"> Recados </option>
+         </select>
+         <br>
+        Telefone:
+         <input type="number" name= "ddd2" size="3" maxlength="2"> 
+         <input type="tel" name="telefone2" size="9" maxlength="9"
+         >           
+         <select name="tipo2">
+           <option value=" "> escolha </option>           
+           <option value="R"> Residencial </option>
+           <option value="C"> Celular </option>
+           <option value="R"> Recados </option>
+         </select>
+         <br>
+        Telefone:
+         <input type="number" name= "ddd3" size="3" maxlength="2"> 
+         <input type="tel3" name="telefone3" size="9" maxlength="9"> 
+
+         <select name="tipo3">
+           <option value=""> escolha </option>           
+           <option value="R"> Residencial </option>
+           <option value="C"> Celular </option>
+           <option value="R"> Recados </option>
+         </select>
+         <br><br>
+
+        <fieldset>
+         <legend> Observações: </legend>      
+         <input  type="text"
+                 name="observacoes"
+                 size="250"                 
+                 maxlength="250" 
+                 placeholder="Insira suas observações aqui.">          
+        </fieldset>
+         <br>                
+      
+       <hr>		   
+		<input type="submit" value=" Enviar os Dados "> 
+          
+   </form>
+	
+	</body>
+
+</html>
